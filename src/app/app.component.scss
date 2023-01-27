@@ -1,0 +1,76 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.top-three {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.primary-card {
+    height: 600px;
+    width: 400px;
+    border: 1px #616161bf solid;
+    background: whitesmoke;
+    color: darkred;
+    border-radius: 18px;
+}
+
+.secondary-card {
+    width: 400px;
+    height: 500px;
+    border: 1px black solid;
+}
+
+.card-header {
+    // display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-header::after {
+    content: "";
+    display: block;
+    width: 94%;
+    height: 1px;
+    background: #8b00004f;
+    margin: 3px auto;
+}
+
+.first-word {
+    font-size: 20px !important;
+    display: block !important;
+    letter-spacing: 6px;
+}
+
+.rest-of-word {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 8px;
+}
+
+.white {
+    color: white;
+}
+
+.select-a-vendor-btn-container {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+}
+
+.select-a-vendor-btn {
+    width: 96%;
+    margin-top: 20px;
+    padding: 10px;
+    box-shadow: 8px 7px 7px #bababa;
+    background: darkred;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
