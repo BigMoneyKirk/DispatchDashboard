@@ -81,20 +81,23 @@ main {
 }
 
 .generic-info-container {
+    margin-top: 0.5rem;
     padding: 10px;
+    height: 85%;
 }
 
 .generic-info-container ol {
     display: grid;
-    /* flex-direction: column; */
-    gap: 10px;
-    /* grid-auto-flow: column; */
+    gap: 1rem;
     grid-template-columns: repeat(3, 1fr);
+    height: 50%;
 }
 
 .generic-info-container ol li {
     list-style: none;
-    border: 1px solid;
+    border: 1px solid #8b00004f;
+    border-radius: 5px;
+    padding: 2px;
 }
 
 .grid-col-span-2 {
@@ -103,4 +106,8 @@ main {
 
 .grid-row-span-3 {
     grid-row: span 3;
+}
+
+.description-container {
+    margin-top: 2rem;
 }
