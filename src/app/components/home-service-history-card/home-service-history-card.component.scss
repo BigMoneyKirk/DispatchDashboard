@@ -1,0 +1,25 @@
+$lighter-seagreen: rgb(175, 255, 251);
+
+.service-history-content-container {
+    margin-top: 0.5rem;
+    padding: 10px;
+    height: 72%;
+    border-radius: 18px;
+    margin: 1rem;
+    background: $lighter-seagreen;
+}
+
+.service-history-content-container ol {
+    display: grid;
+    gap: 1rem;
+    height: 50%;
+}
+
+.service-history-content-container ol li {
+    list-style: none;
+    border: 1px solid $lighter-seagreen;
+    border-radius: 5px;
+    padding: 2px;
+    // box-shadow: 1px 2px 2px $box-shadow-gray;
+    background: lightseagreen;
+}
