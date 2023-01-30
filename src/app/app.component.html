@@ -27,9 +27,14 @@
     </home-important-notes>
   </section>
 
-  <section class="acknowledgment_section"></section>
+  <section class="acknowledgment_section">
+    <input [(ngModel)]="understood" type="checkbox" id="acknowledgment_checkbox" />
+    <p class="acknowledgment_text" (click)="toggleAcknowledgement()">
+      I have read and understood the details and the associated history concerning this work order.
+    </p>
+  </section>
 
   <div class="select-a-vendor-btn-container">
-    <button class="btn select-a-vendor-btn">Select a Vendor</button>
+    <button class="btn select-a-vendor-btn" [disabled]="!understood">Select a Vendor</button>
   </div>
 </main>

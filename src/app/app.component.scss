@@ -89,6 +89,21 @@ main {
     height: 100%;
 }
 
+.acknowledgment_section {
+    position: absolute;
+    bottom: 72px;
+    display: flex;
+    padding-left: 44px;
+}
+
+#acknowledgment_checkbox {
+    transform: scale(1.75);
+}
+
+.acknowledgment_text {
+    margin-left: 10px;
+    cursor: pointer;
+}
 
 .select-a-vendor-btn-container {
     display: flex;
@@ -103,9 +118,14 @@ main {
     margin-top: 20px;
     padding: 10px;
     box-shadow: 8px 7px 7px #bababa;
-    background: orangered;
+    background: $nest-orange;
     border: none;
     color: white;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.select-a-vendor-btn:disabled {
+    background: gray;
+    cursor: not-allowed;
 }

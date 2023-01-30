@@ -5,6 +5,12 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
+
 export class AppComponent {
-  title = 'DispatchDashboard';
+  public title = 'DispatchDashboard';
+  public understood: boolean = false;
+
+  public toggleAcknowledgement() {
+    this.understood = !this.understood;
+  }
 }
