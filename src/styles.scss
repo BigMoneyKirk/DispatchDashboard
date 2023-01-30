@@ -11,6 +11,14 @@ html {
     height: 100vh;
 }
 
+body::before {
+    content: '';
+    height: 200px;
+    width: 200px;
+    background: pink;
+    z-index: 100;
+}
+
 body {
     height: 100%;
 }

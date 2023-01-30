@@ -1,5 +1,6 @@
 $red-color: #8b00004f;
 $box-shadow-gray: #45454580;
+$nav-gray: rgba(79, 79, 79, 0.214);
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -10,13 +11,26 @@ main {
     height: 90%;
 }
 
+.top-bar-container {
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+}
+
 .top-bar {
     display: flex;
     justify-content: space-between;
-    margin: 5px 20px;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.top-bar-container::before {
+    content: '';
     position: absolute;
-    width: 98%;
-    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    background: $nav-gray;
+    z-index: -1;
 }
 
 .nest-logo-container {
