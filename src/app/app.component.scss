@@ -1,6 +1,4 @@
-$red-color: #8b00004f;
-$box-shadow-gray: #45454580;
-$nav-gray: rgba(79, 79, 79, 0.214);
+@import '../assets/colors.scss';
 
 *, *::before, *::after {
     box-sizing: border-box;
