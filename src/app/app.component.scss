@@ -10,10 +10,29 @@ main {
     height: 90%;
 }
 
-.cancel-workorder-btn-container {
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 20px;
     position: absolute;
-    top: 20px;
-    right: 20px;
+    width: 98%;
+    box-sizing: border-box;
+}
+
+.nest-logo-container {
+    height: 70px;
+    width: 70px;
+
+    .nest-logo {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.cancel-workorder-btn-container {
+    // position: absolute;
+    // top: 20px;
+    // right: 20px;
 }
 
 .cancel-workorder-btn {
