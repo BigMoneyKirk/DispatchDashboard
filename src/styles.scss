@@ -1,5 +1,4 @@
-$red-color: #8b00004f;
-$box-shadow-gray: #45454580;
+@import '../src/assets/colors.scss';
 
 * {
     margin: 0;
@@ -35,9 +34,10 @@ body {
     height: 600px;
     width: 400px;
     background: lightgoldenrodyellow;
-    color: darkred;
+    color: $nest-dark-purple;
     border-radius: 18px;
-    box-shadow: 16px -10px 1rem #aaaaaa91, inset 2px -4px rgba(87, 87, 30, 0.2);
+    box-shadow: 16px -10px 1rem #aaaaaa91,
+                inset 2px -4px rgba(87, 87, 30, 0.2);
     border-right: 0;
     border-bottom: 0;
 }
@@ -67,7 +67,7 @@ body {
     display: block;
     width: 94%;
     height: 1px;
-    background: $red-color;
+    background: $yellow-shadow;
     margin: 3px auto;
 }
 

@@ -1,10 +1,9 @@
-$red-color: #8b00004f;
-$box-shadow-gray: #45454580;
+@import '../../../../assets/colors.scss';
 
 .generic-info-container {
     padding: 10px;
     height: 76%;
-    background: rgba(87, 87, 30, 0.2);
+    background: $yellow-shadow;
     border-radius: 18px;
     margin: 1rem;
 }
@@ -18,7 +17,7 @@ $box-shadow-gray: #45454580;
 
 .generic-info-container ol li {
     list-style: none;
-    border: 1px solid $red-color;
+    border: 1px solid $nest-dark-purple;
     border-radius: 5px;
     padding: 2px;
     box-shadow: 1px 2px 2px $box-shadow-gray;
@@ -34,7 +33,7 @@ $box-shadow-gray: #45454580;
 }
 
 .description-inner-container {
-    background: darkgray;
+    background: $nest-purple;
     padding: 9px;
     border-radius: 6px;
     padding-bottom: 18px;

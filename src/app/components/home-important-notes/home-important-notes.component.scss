@@ -1,6 +1,6 @@
 @import '../../../assets/colors.scss';
 
-.service-history-content-container {
+.important-notes-content-container {
     margin-top: 0.5rem;
     padding: 10px;
     height: 72%;
@@ -9,14 +9,12 @@
     background: $lighter-seagreen;
 }
 
-.service-history-content-container ol {
-    display: grid;
-    gap: 1rem;
-    height: 100%;
-    overflow: auto;
+.important-notes-content-container p {
+    // color: $red-color;
+    color: rgb(6, 27, 27);
 }
 
-.service-history-content-container ol li {
+.important-notes-content-container ol li {
     list-style: none;
     border: 1px solid $lighter-seagreen;
     border-radius: 5px;
@@ -25,7 +23,7 @@
     background: lightseagreen;
 }
 
-.service-history-content-container ol li:hover {
+.important-notes-content-container ol li:hover {
     background: blue;
     cursor: pointer;
 }
