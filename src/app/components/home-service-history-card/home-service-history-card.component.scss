@@ -23,3 +23,8 @@ $lighter-seagreen: rgb(175, 255, 251);
     // box-shadow: 1px 2px 2px $box-shadow-gray;
     background: lightseagreen;
 }
+
+.service-history-content-container ol li:hover {
+    background: blue;
+    cursor: pointer;
+}
