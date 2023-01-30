@@ -1,3 +1,6 @@
+$red-color: #8b00004f;
+$box-shadow-gray: #45454580;
+
 *, *::before, *::after {
     box-sizing: border-box;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -5,6 +8,29 @@
 
 main {
     height: 90%;
+}
+
+.cancel-workorder-btn-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.cancel-workorder-btn {
+    height: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 50%;
+    background: lightseagreen;
+    color: snow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.cancel-text {
+    transform: translateY(-2px);
 }
 
 .top-three {
@@ -17,17 +43,25 @@ main {
 .primary-card {
     height: 600px;
     width: 400px;
-    border: 1px #616161bf solid;
-    background: whitesmoke;
+    background: lightgoldenrodyellow;
     color: darkred;
     border-radius: 18px;
-    box-shadow: 16px -10px 1rem #aaaaaa91;
+    box-shadow: 16px -10px 1rem #aaaaaa91, inset 2px -4px rgba(87, 87, 30, 0.2);
+    border-right: 0;
+    border-bottom: 0;
 }
 
 .secondary-card {
     width: 400px;
     height: 500px;
-    border: 1px black solid;
+    /* border: 1px black solid; */
+    background: lightseagreen;
+    border-radius: 18px;
+    color: snow;
+}
+
+.secondary-card .card-header::after {
+    background: snow;
 }
 
 .card-header {
@@ -42,7 +76,7 @@ main {
     display: block;
     width: 94%;
     height: 1px;
-    background: #8b00004f;
+    background: $red-color;
     margin: 3px auto;
 }
 
@@ -84,7 +118,10 @@ main {
 .generic-info-container {
     margin-top: 0.5rem;
     padding: 10px;
-    height: 85%;
+    height: 79%;
+    background: rgba(87, 87, 30, 0.2);
+    border-radius: 18px;
+    margin: 1rem;
 }
 
 .generic-info-container ol {
@@ -96,14 +133,15 @@ main {
 
 .generic-info-container ol li {
     list-style: none;
-    border: 1px solid #8b00004f;
+    border: 1px solid $red-color;
     border-radius: 5px;
     padding: 2px;
-    box-shadow: 1px 2px 2px #45454580;
+    box-shadow: 1px 2px 2px $box-shadow-gray;
+    background: lightgoldenrodyellow;
 }
 
 .generic-info-container ol li.location {
-    box-shadow: -2px 1px 3px #45454580;
+    box-shadow: -2px 1px 3px $box-shadow-gray;
 }
 .grid-col-span-2 {
     grid-column: span 2;
