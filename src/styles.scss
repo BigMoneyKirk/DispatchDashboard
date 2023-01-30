@@ -1,3 +1,6 @@
+$red-color: #8b00004f;
+$box-shadow-gray: #45454580;
+
 * {
     margin: 0;
     padding: 0;
@@ -10,4 +13,64 @@ html {
 
 body {
     height: 100%;
+}
+
+.grid-col-span-2 {
+    grid-column: span 2;
+}
+
+.grid-row-span-3 {
+    grid-row: span 3;
+}
+
+.primary-card {
+    height: 600px;
+    width: 400px;
+    background: lightgoldenrodyellow;
+    color: darkred;
+    border-radius: 18px;
+    box-shadow: 16px -10px 1rem #aaaaaa91, inset 2px -4px rgba(87, 87, 30, 0.2);
+    border-right: 0;
+    border-bottom: 0;
+}
+
+.secondary-card {
+    width: 400px;
+    height: 500px;
+    /* border: 1px black solid; */
+    background: lightseagreen;
+    border-radius: 18px;
+    color: snow;
+}
+
+.secondary-card .card-header::after {
+    background: snow;
+}
+
+.card-header {
+    // display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-header::after {
+    content: "";
+    display: block;
+    width: 94%;
+    height: 1px;
+    background: $red-color;
+    margin: 3px auto;
+}
+
+.first-word {
+    font-size: 20px !important;
+    display: block !important;
+    letter-spacing: 6px;
+}
+
+.rest-of-word {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 8px;
 }

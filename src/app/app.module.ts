@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { GenericInformationCardComponent } from './components/generic-information-card/generic-information-card/generic-information-card.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    GenericInformationCardComponent
   ],
   imports: [
     BrowserModule,
