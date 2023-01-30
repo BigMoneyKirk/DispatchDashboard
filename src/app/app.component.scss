@@ -55,6 +55,13 @@ main {
     box-shadow: 3px 3px darkred;
 }
 
+.cancel-workorder-btn:hover {
+    background: rgb(231, 0, 0);
+    box-shadow: 2px 2px darkred,
+                inset 4px -2px red;
+    transform: translate(1px, 1px);
+}
+
 .cancel-workorder-btn:hover::before {
     content: "";
     width: 0;
