@@ -1,0 +1,138 @@
+@import '../../../../assets/colors.scss';
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    height: 90%;
+}
+
+.top-bar-container {
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.top-bar-container::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: $nav-gray;
+    z-index: -1;
+}
+
+.nest-logo-container {
+    height: 70px;
+    width: 70px;
+
+    .nest-logo {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.cancel-workorder-btn {
+    height: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 50%;
+    background: red;
+    color: snow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 3px 3px darkred;
+}
+
+.cancel-workorder-btn:hover {
+    background: rgb(231, 0, 0);
+    box-shadow: 2px 2px darkred,
+                inset 4px -2px red;
+    transform: translate(1px, 1px);
+}
+
+.cancel-workorder-btn:hover::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid gray;
+    position: absolute;
+    transform: translate(1px, 31px);
+    z-index: 1;
+}
+
+.cancel-workorder-btn:hover::after {
+    content: "Cancel this work order";
+    position: absolute;
+    width: 140px;
+    transform: translate(-47px, 46px);
+    background: gray;
+    padding: 0.25rem;
+    border-radius: 3px;
+}
+
+.cancel-text {
+    transform: translateY(-2px);
+    font-weight: 500;
+}
+
+.top-three {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.acknowledgment_section {
+    position: absolute;
+    bottom: 72px;
+    display: flex;
+    padding-left: 44px;
+}
+
+#acknowledgment_checkbox {
+    transform: scale(1.75);
+}
+
+.acknowledgment_text {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.select-a-vendor-btn-container {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+}
+
+.select-a-vendor-btn {
+    width: 96%;
+    margin-top: 20px;
+    padding: 10px;
+    box-shadow: 8px 7px 7px #bababa;
+    background: $nest-orange;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.select-a-vendor-btn:disabled {
+    background: gray;
+    cursor: not-allowed;
+}

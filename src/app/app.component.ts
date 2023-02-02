@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { AppRoutingConstants } from './constants/app-routing-constants';
 
 @Component({
   selector: 'app-root',
@@ -8,9 +10,4 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   public title = 'DispatchDashboard';
-  public understood: boolean = false;
-
-  public toggleAcknowledgement() {
-    this.understood = !this.understood;
-  }
 }

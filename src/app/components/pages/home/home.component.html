@@ -1,0 +1,42 @@
+
+
+<main>
+    <section class="top-bar-container">
+      <div class="top-bar">
+        <div class="nest-logo-container">
+          <img class="nest-logo" id="nest-logo" src="../assets/images/Nest_LOGO.png" alt="NEST Logo">
+        </div>
+  
+        <div class="cancel-workorder-btn-container">
+          <button class="btn cancel-workorder-btn">
+            <span class="cancel-text">
+              Cancel
+            </span>
+          </button>
+        </div>
+      </div>
+  
+    </section>
+  
+    <section class="top-three">
+      <home-service-history-card>
+      </home-service-history-card>
+  
+      <generic-information-card>
+      </generic-information-card>
+  
+      <home-important-notes>
+      </home-important-notes>
+    </section>
+  
+    <section class="acknowledgment_section">
+      <input [(ngModel)]="understood" type="checkbox" id="acknowledgment_checkbox" />
+      <p class="acknowledgment_text" (click)="toggleAcknowledgement()">
+        I have read and understood the details and the associated history concerning this work order.
+      </p>
+    </section>
+  
+    <div class="select-a-vendor-btn-container">
+      <button class="btn select-a-vendor-btn" [disabled]="!understood" (click)="selectAVendorPage()">Select a Vendor</button>
+    </div>
+  </main>

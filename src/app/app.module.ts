@@ -7,13 +7,17 @@ import { AppComponent } from './app.component';
 import { GenericInformationCardComponent } from './components/generic-information-card/generic-information-card/generic-information-card.component';
 import { HomeServiceHistoryCardComponent } from './components/home-service-history-card/home-service-history-card.component';
 import { HomeImportantNotesComponent } from './components/home-important-notes/home-important-notes.component';
+import { SelectAVendorPageComponent } from './components/pages/select-a-vendor-page/select-a-vendor-page.component';
+import { HomeComponent } from './components/pages/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GenericInformationCardComponent,
     HomeServiceHistoryCardComponent,
-    HomeImportantNotesComponent
+    HomeImportantNotesComponent,
+    SelectAVendorPageComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
