@@ -6,9 +6,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GenericInformationCardComponent } from './components/generic-information-card/generic-information-card/generic-information-card.component';
 import { HomeServiceHistoryCardComponent } from './components/home-service-history-card/home-service-history-card.component';
-import { HomeImportantNotesComponent } from './components/home-important-notes/home-important-notes.component';
+import { HomeImportantNotesComponent } from './components/home-service-history-card/home-important-notes/home-important-notes.component';
 import { SelectAVendorPageComponent } from './components/pages/select-a-vendor-page/select-a-vendor-page.component';
 import { HomeComponent } from './components/pages/home/home.component';
+import { HomeQuotedWorkComponent } from './components/pages/home/home-quoted-work/home-quoted-work.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { HomeComponent } from './components/pages/home/home.component';
     HomeServiceHistoryCardComponent,
     HomeImportantNotesComponent,
     SelectAVendorPageComponent,
-    HomeComponent
+    HomeComponent,
+    HomeQuotedWorkComponent
   ],
   imports: [
     BrowserModule,
