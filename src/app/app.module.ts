@@ -10,6 +10,8 @@ import { HomeImportantNotesComponent } from './components/home-service-history-c
 import { SelectAVendorPageComponent } from './components/pages/select-a-vendor-page/select-a-vendor-page.component';
 import { HomeComponent } from './components/pages/home/home.component';
 import { HomeQuotedWorkComponent } from './components/pages/home/home-quoted-work/home-quoted-work.component';
+import { CategoryDropdownComponent } from './components/home-service-history-card/category-dropdown/category-dropdown.component';
+// import { SelectDropDownModule } from 'ngx-select-dropdown'
 
 @NgModule({
   declarations: [
@@ -19,12 +21,14 @@ import { HomeQuotedWorkComponent } from './components/pages/home/home-quoted-wor
     HomeImportantNotesComponent,
     SelectAVendorPageComponent,
     HomeComponent,
-    HomeQuotedWorkComponent
+    HomeQuotedWorkComponent,
+    CategoryDropdownComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    // SelectDropDownModule
   ],
   providers: [],
   bootstrap: [AppComponent]
